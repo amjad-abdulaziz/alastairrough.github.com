@@ -1,0 +1,1147 @@
+/* CSS Document */
+/* Generic Settings */
+
+/* ========================== */
+/* Global Stylesheet Elements */
+/* ========================== */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #ECECEC; /* was #003366 */
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    color:#4d4d4d; /* #666666 */
+    width: 100%; /* needed for page centering */
+    text-align: center; /* needed for page centering */
+}
+body {
+    background-image:url(/cc/images/cssImages/siteImages/bcf_site_background.png);
+    background-repeat:repeat-x;
+    background-position:left top;
+    background-attachment:scroll;
+}
+a, a:visited, a:link, a:active {
+    color:#000066;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+/* ================================================== */
+/* Global Page and Content Wrappers for Oracle Portal */
+/* ================================================== */
+#global_page_wrapper {
+    position: relative;
+    width:950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: #FFFFFF;
+    text-align: left;
+    border-left:0px solid #C3C3C3;
+    border-right:0px solid #C3C3C3;
+    outline-color:#ffffff;
+    outline-style:solid;
+    outline-width:0px;
+    padding:0px 3px 3px 3px;
+}
+#global_staticContent_wrapper {
+    background-color: #FFFFFF;
+    margin: 15px 0 15px 0;
+    clear:both;
+    float: left; /* needed for footer */
+    padding: 0px;
+    border: solid black 0px;
+}
+#global_header_wrapper {
+    background-color: #FFFFFF;
+    padding: 25px 0 0 0;
+    margin:0;
+    width:950px;
+}
+/* Header Sign In */
+#header_signin a {
+    float:right;
+    width:175px;
+    height:24px;
+    background-image:url(/cc/images/cssImages/headerImages/bcf_header_signin.png);
+    background-repeat:no-repeat;
+}
+#header_signin a:hover {
+    background-position: 0 -24px;
+}
+/* Header Navigation */
+#global_header_wrapper ul#header_navbar {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+}
+#global_header_wrapper ul#header_navbar li {
+    display:inline;
+}
+#global_header_wrapper ul#header_navbar li a {
+    float:left;
+}
+#global_header_wrapper ul#header_navbar li#travelCenterTab a {
+    width:130px;
+    height:24px;
+    background-image:url(/cc/images/cssImages/headerImages/bcf_header_travelCentre_tab.png);
+    background-repeat:no-repeat;
+}
+#global_header_wrapper ul#header_navbar li#reservationsTab a {
+    width:115px;
+    height:24px;
+    background-image:url(/cc/images/cssImages/headerImages/bcf_header_reservations_tab.png);
+    background-repeat:no-repeat;
+}
+#global_header_wrapper ul#header_navbar li#currentConditionsTab a {
+    width:150px;
+    height:24px;
+    background-image:url(/cc/images/cssImages/headerImages/bcf_header_currentCond_tab.png);
+    background-repeat:no-repeat;
+}
+#global_header_wrapper ul#header_navbar li#travelCenterTab a:hover,
+#global_header_wrapper ul#header_navbar li#reservationsTab a:hover, 
+#global_header_wrapper ul#header_navbar li#currentConditionsTab a:hover {
+    background-position: 0 -24px;
+}
+/* Header Graphics */
+#homePage_header_graphic {
+    width:950px;
+    height:207px;
+    background-image:url(/cc/images/cssImages/headerImages/bcf_header_homePage_graphic.png);
+    background-repeat:no-repeat;
+    display:block;
+    clear:both;
+}
+#staticPage_header_graphic {
+    width:950px;
+    height:155px;
+    background-image:url(/cc/images/cssImages/headerImages/bcf_header_subPage_graphic.png);
+    background-repeat:no-repeat;
+    display:block;
+    clear:both;
+}
+/* Footer */
+#global_footer {
+    font-size:smaller;
+    padding: 8px;
+    clear: both;
+    text-align: right;
+    color: #4d4d4d;
+    background-color: #ffffff; /* TEMPOAARY COLOUR */
+}
+#global_footer #copyright {
+    float:left;
+}
+#global_footer #footerLinks {
+    color:#4d4d4d;
+}
+#global_footer #footerLinks a {
+    color:#4d4d4d;
+    text-decoration:none;
+    padding-right:3px;
+    padding-left: 3px;
+}
+/* Inner page footer revision class */
+.global_page_revision {
+    color:#4d4d4d;
+    background-color:#FFFFFF;
+    padding:10px;
+    text-align:center;
+    font-style: italic;
+}
+/* ===================== */
+/* Global Button Classes */
+/* ===================== */
+/* common button attributes */
+.bcf_btn_join,
+.bcf_btn_signin,
+.bcf_btn_newaccount {
+    display: block;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    background-color:#0066CC;
+    overflow:hidden;
+}
+.bcf_btn_manage {
+    width:73px;
+    height:20px;
+    background-image:url(/cc/images/cssImages/buttonImages/bcf_btn_join.png);
+}
+.bcf_btn_join {
+    width:73px;
+    height:20px;
+    background-image:url(/cc/images/cssImages/buttonImages/bcf_btn_join.png);
+}
+.bcf_btn_signin {
+    width:73px;
+    height:20px;
+    background-image:url(/cc/images/cssImages/buttonImages/bcf_btn_signin.png);
+}
+.bcf_btn_newaccount {
+    width:95px;
+    height:20px;
+    background-image:url(/cc/images/cssImages/buttonImages/bcf_btn_newaccount.png);
+}
+/* button hover classes */
+.bcf_btn_join:hover,
+.bcf_btn_signin:hover,
+.bcf_btn_newaccount:hover {
+    background-position: 0 -20px;
+}
+/* =============================== */
+/* Class for all BCF Content Pages */
+/* =============================== */
+h2.tocTITLE {
+    font: bold normal 12px/12px arial;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+    padding: 0;
+}
+td.newsBrief {
+    padding-bottom: 10px;/*background: red;*/
+}
+td.newsTitle {
+/*padding: 5px;*/
+/*background: orange;*/
+}
+td.newsBrief a, td.newsBrief a:active, td.newsBrief a:link, td.newsBrief a:visited {
+    font: bold normal 11px/12px verdana;
+    font-weight: bold;
+    color: #000000;
+}
+td.newsTitle a, td.newsTitle a:active, td.newsTitle a:link, td.newsTitle a:visited {
+    font: normal normal 12px/12px arial;
+    color: #000000;
+}
+table#tblNews {
+    margin-top: 10px;
+}
+/* ORACLE: BODY IS DEFINED IN THE GLOBAL.CSS */
+/* --
+body 
+{
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    background: #003366;
+    color: #000000;
+        margin: 0px;
+}
+-- */
+/* MAIN LAYOUT TABLE*/
+table#tblLayout {
+    /*width: 775px; -- REMOVED FOR ORACLE */
+    width: 950px; /* ORACLE */
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    /*margin: 0 auto; -- REMOVED FOR ORACLE */
+    margin:0; /* ORACLE */
+    /*background: #BFD6E4;*/
+    background: #E0EAEE;
+    border-collapse: collapse;
+    border-left: 8px solid #ffffff;
+    border-right: 8px solid #ffffff;
+    border-bottom: 8px solid #ffffff;
+}
+/* SEARCH */
+.searchHolder {
+    padding-left: 10px;
+}
+/* BANNER ROW */
+td#tdBanner {
+    background-color: #ffffff;
+}
+/* MENU COL. */
+.tdMenu {
+    /*background: #BFD6E4 url(/cc/interface/menu_bg.gif) repeat left top;*/
+    background-color: #FFFFFF;
+    vertical-align: top;
+    width: 200px; /* ORACLE */
+}
+td.menu form {
+    font: normal normal 11px/11px arial;
+    padding: 20px 5px 5px;
+}
+td.menu p {
+    font-size: 11px;
+    text-align: left;
+    padding: 0 0 5px 27px;
+}
+td.menu input {
+    border: 1px solid #5d7EAE;
+}
+input.BTN {
+    margin-bottom: 1px;
+    font: normal normal 11px/10px arial;
+    color: #FFFFFF;
+    background-color: #2672A5;
+    margin-left: 3px;
+}
+/* HOME MENU COL. */
+.homeMenu {
+    background: #BFD6E4 url(/cc/interface/home_menu_bg.jpg) no-repeat left bottom;
+    vertical-align: top;
+}
+td.homeMenu form {
+    font: normal normal 11px/11px arial;
+    padding: 20px 5px 5px;
+}
+td.homeMenu p {
+    font-size: 11px;
+    text-align: left;
+    padding: 0 0 5px 27px;
+}
+td.homeMenu input {
+    border: 1px solid #5d7EAE;
+}
+input.BTN {
+    margin-bottom: 1px;
+    font: normal normal 11px/10px arial;
+    color: #FFFFFF;
+    background-color: #2672A5;
+    margin-left: 3px;
+}
+/* HOME CONTENT COL. */
+.homeContent {
+    background-color: #FFFFFF;
+    vertical-align: top;
+    padding-left: 30px;
+    padding-right:30px;
+    color: #333333;
+}
+.homeContent H1, .homeContent div.welcome {
+    font: 34px Verdana, Arial, Helvetica, sans-serif;
+    color:#f78f1e;
+    /*padding-bottom: 15px;*/
+    padding-top:35px;
+}
+.homeContent H2 {
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /*padding-bottom: 15px;*/
+}
+.homeContent p {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 30px;
+    color: #4d4d4d;
+    line-height: 20px;
+    /*padding-bottom: 15px;*/
+}
+.homeContent A {
+    color: #000066;
+    text-decoration: none;
+}
+.homeContent A:visited {
+    color: #000066;
+}
+.homeContent A:active {
+    color: #000066;
+}
+.homeContent A:hover {
+    color: #000066;
+    text-decoration: underline;
+}
+.homeContent UL {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    padding-left: 30px;
+}
+.homeContent LI {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+}
+.homeContent DL {
+    font: 11px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.homeContent DD {
+    font: 11px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    padding-left: 40px;
+}
+.homeContent #homepage_subscribe {
+    border-top:1px solid #dedede;
+}
+.homeContent #join {
+    float:left;
+    margin-right: 10px;
+}
+/* CONTENT COL. */
+.content {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    vertical-align: top;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 18px;
+}
+.content H1 {
+    font: 24px Verdana, Arial, Helvetica, sans-serif;
+    color:#f78f1e;
+    padding-top: 20px;
+    /*padding-bottom: 15px;
+    margin-left: 40px;*/
+}
+.content H2 {
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;/*padding-bottom: 15px;
+    margin-left: 40px;*/
+}
+.content p, .content td, .content dt {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 18px;
+    /*padding-bottom: 15px;*/
+}
+/*
+.content A {
+    color: #BC0C0E;
+    text-decoration: none;
+}
+.content A:visited {
+    color: #BC0C0E;
+}
+.content A:active {
+    color: #660066;
+}
+.content A:hover {
+    color: #660066;
+    text-decoration: underline;
+}
+*/
+.content UL {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #424242;
+    padding-left: 30px;
+}
+.content LI {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+}
+.content DL {
+    font: 11px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #424242;
+}
+.content DD {
+    font: 11px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #424242;
+    padding-left: 40px;
+}
+div#contentArea {
+    padding: 40px 0px 0px 100px;
+}
+div#contentFares {
+    padding-left: 10px;
+}
+/* PROMOTIONS COL. */
+.promo {
+    /*background-color: #BFD6E4;*/
+background: #BFD6E4 url(//cc/interface/sponsors_bg.gif) repeat left top;
+}
+.promo p {
+    padding: 0px 0px 0px 10px;
+}
+div#sponsors {
+    text-align: center;
+    padding-bottom: 10px;
+}
+/* PROMO COL TABLE */
+table#tblPromo {
+    background: #E8F1F6;
+    border-collapse: collapse;
+    width: 100%;
+}
+table#tblPromo td {
+    vertical-align: top;
+    border-bottom: 1px solid #BFD6E4;
+    /*  border-bottom: 1px solid #D8E6EE;*/
+padding-right: 2px;
+}
+table#tblPromo a {
+    font: normal normal 11px/11px arial;
+    color: #2C85BB;
+}
+table#tblPromo a:hover {
+    font: normal normal 11px/11px arial;
+    color: #424242;
+}
+.promoTD {
+    margin-top: 10px;
+    padding-left: 20px;
+    background-image: url(/cc/images/interface/menu_x.gif);
+    background-repeat: no-repeat;
+    background-position: 11px 3px;
+}
+/* CONTENT COL HEADERS TABLE */
+div#tblHeaders {
+    width: 300px;
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+/*
+div#tblHeaders a
+{
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1F416F;
+}
+
+div#tblHeaders a:hover
+{
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #1F416F;
+}
+*/
+div#btnOne a, div#btnTwo a, div#btnThree a, div#btnFour a {
+    display: block;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1F416F;
+    width: 300px;
+}
+div#btnOne {
+    display: block;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: #ffffff url(/cc/images/interface/btn_bg_1.gif) no-repeat 0px 0px;
+    border-bottom: 8px solid #ffffff;
+}
+div#btnOne a:hover {
+    display: block;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 300px;
+    background: #ffffff url(/cc/images/interface/btn_bg_1_over.gif) no-repeat 0px 0px;
+}
+div#btnTwo {
+    display: block;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: #ffffff url(//cc/interface/btn_bg_2.gif) no-repeat 0px 0px;
+    border-bottom: 8px solid #ffffff;
+}
+div#btnTwo a:hover {
+    display: block;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 300px;
+    background: #ffffff url(/cc/images/interface/btn_bg_2_over.gif) no-repeat 0px 0px;
+}
+div#btnThree {
+    display: block;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: #ffffff url(/cc/images/interface/btn_bg_3.gif) no-repeat 0px 0px;
+    border-bottom: 8px solid #ffffff;
+}
+div#btnThree a:hover {
+    display: block;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 300px;
+    background: #ffffff url(/cc/images/interface/btn_bg_3_over.gif) no-repeat 0px 0px;
+}
+div#btnFour {
+    display: block;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: #ffffff url(/cc/images/interface/btn_bg_4.gif) no-repeat 0px 0px;
+    border-bottom: 8px solid #ffffff;
+}
+div#btnFour a:hover {
+    display: block;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    font-weight: bold;
+    width: 300px;
+    text-decoration: none;
+    background: #ffffff url(/cc/images/interface/btn_bg_4_over.gif) no-repeat 0px 0px;
+}
+/* FOOTER DIVS */
+div#quicklinks {
+    text-align: center;
+    padding-top: 10px;
+    font: 11px Arial, sans-serif;
+    color: #CCCCCC;
+}
+div#quicklinks a {
+    font: 11px Arial, sans-serif;
+    text-decoration: none;
+    color: #CCCCCC;
+}
+div#quicklinks a:hover {
+    font: 11px Arial, sans-serif;
+    text-decoration: underline;
+    color: #CCCCCC;
+}
+div#footer {
+    text-align: center;
+    /*padding-top: 10px;*/
+    padding-bottom: 10px;
+    font: 11px Arial, sans-serif;
+    color: #CCCCCC;
+}
+/* SPONSOR LOGOS */
+table#tblSponsors {
+    width: 100%;
+}
+table#tblSponsors img {
+    border: 0;
+}
+td#ttlSponsors {
+    font: 10px bold Arial, sans-serif;
+    width: 50%;
+}
+td#SponsorImages {
+    padding-left: 15px;
+}
+/* Homepage Advisory */
+#showAdvisory {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #990000;
+    line-height: 20px;
+    padding:5px;
+    border:1px #cccccc solid;
+    background-color:#f2f2e6;
+    margin:10px 0 10px 0;
+   display:none; /* by default, advisory is not shown */
+}
+#showAdvisory.yes, .showLinkYes {
+    display:block;
+}
+#showAdvisory.no, .showLinkNo {
+    display:none;
+}
+#event-list {
+    width: 600px;
+}
+#event-list p {
+    margin: 0 0 1em 0;
+}
+#event-list .event {
+    width: 100%;
+    float: left;
+    margin: 0 0 10px 0;
+    position: relative;
+    left: 0;
+    padding: 5px 0 15px 0;
+    background: #fff !important;
+}
+#event-list .event.alt {
+    background: #E8F1F6 !important;
+}
+#event-list .event .detail {
+    float: left;
+    width: auto;
+    padding: 0 5px 5px 5px;
+}
+#event-list .event .detail .date {
+    color: #ff6600;
+    display: block;
+    margin: 0;
+    font-size: 11px;
+}
+#event-list .event .detail .city {
+    font-weight: bold;
+    display: block;
+    margin: 0 0 5px 0;
+    font-size: 11px;
+}
+#event-date {
+    border-bottom: 2px solid #AAC8EA;
+    margin: 0 0 1em 0;
+    padding: 0 0 5px 0;
+}
+#event-list .readmore {
+    font-weight: bold;
+    text-decoration: none;
+    color: #DF7800;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-size: 12px;
+}
+#event-list .event h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: #0033cc;
+}
+#event-list .event h6 a {
+    color: #0033cc;
+    text-decoration: none;
+}
+#event-list .bold-option {
+    font-weight: bold;
+}
+.Menu {
+    width: 200px;
+}
+.Menu1 {
+    display: block;
+    margin-bottom: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #4d4d4d;
+}
+.Menu1 A, .Menu1 A:visited {
+    display: block;
+    padding-left: 16px;
+    color: #4D4D4D;
+    line-height: 22px;
+    text-decoration: none;
+}
+.Menu1 A:hover {
+    display: block;
+    background-color:#f78f1e;
+    color: #FFFFFF;
+    line-height: 22px;
+    text-decoration: none;
+}
+.Menu1Current {
+    display: block;
+    margin-bottom: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #4d4d4d;
+}
+.Menu1Current A, .Menu1Current a:visited {
+    display: block;
+    padding-left: 16px;
+    background-color:#f78f1e;
+    color: #FFFFFF;
+    line-height: 22px;
+    text-decoration: none;
+}
+.Menu2 {
+    display: block;
+    margin-bottom: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #4D4D4D;
+}
+.Menu2 A, .Menu2 A:visited {
+    display: block;
+    padding-left: 35px;
+    color: #4D4D4D;
+    line-height: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #dcdbdc;
+}
+.Menu2 A:hover {
+    display: block;
+    background-color:#f78f1e;
+    color: #FFFFFF;
+    line-height: 20px;
+    text-decoration: none;
+}
+.Menu2Current {
+    display: block;
+    margin-bottom: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #4d4d4d;
+}
+.Menu2Current A, .Menu2Current A:visited, .Menu2Current A:hover {
+    display: block;
+    padding-left: 35px;
+    font-weight:bold;
+    color: #f78f1e;
+    line-height: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #dcdbdc;
+    background-image:url(/cc/images/interface/menu_arrow_orange.png);
+    background-repeat:no-repeat;
+    background-position: 25px 7px;
+}
+.Menu3 {
+    display: block;
+    margin-bottom: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #4D4D4D;
+    border-bottom: 1px solid #dcdbdc;
+}
+.Menu3 A, .Menu3 A:visited {
+    display: block;
+    padding-left: 55px;
+    color: #4D4D4D;
+    line-height: 18px;
+    text-decoration: none;
+}
+.Menu3 A:hover {
+    display: block;
+    background-color:#f78f1e;
+    color: #FFFFFF;
+    line-height: 18px;
+    text-decoration: none;
+}
+.Menu3Current {
+    display: block;
+    margin-bottom: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #4d4d4d;
+}
+.Menu3Current A, .Menu3Current A:visited, .Menu3Current A:hover {
+    display: block;
+    padding-left: 55px;
+    color: #f78f1e;
+    font-weight:bold;
+    line-height: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid #dcdbdc;
+    background-image:url(/cc/images/interface/menu_arrow_orange.png);
+    background-repeat:no-repeat;
+    background-position: 45px 7px;
+}
+table.homeMenu {
+    width: 100%;
+    background: #E8F1F6;
+}
+table.homeMenu td {
+    border-bottom: 1px solid #BFD6E4;
+}
+table.homeMenu.Menu1 {
+    padding: 5px 0 5px 0;
+    margin-bottom: 1px;
+    background-image: url(/cc/images/interface/BG_menu1.gif);
+}
+table.homeMenu.Menu1 A {
+    margin-left: 25px;
+    font: normal normal 11px/12px arial;
+    color: #333333;
+    text-decoration: none;
+}
+table.homeMenu.Menu1 A:hover {
+    margin-left: 25px;
+    font: normal normal 11px/12px arial;
+    color: #333333;
+    text-decoration: underline;
+}
+.service {
+    font: 13px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+.servicetitle a {
+    font: 13px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+.servicetitle a:link {
+    font: 13px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+.servicetitle a:active {
+    font: 13px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+.servicetitle a:hover {
+    font: 13px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+.servicetitle a:visited {
+    font: 13px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+.servicetitle {
+    font: 13px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+td.scheduletitle {
+    font: 16px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #003366;
+}
+td.scheduleSubtitle {
+    font: 10px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #003366;
+}
+td.scheduleDate {
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #336699;
+}
+td.noticeTitle {
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #003366;
+}
+td.noticeTitle a:link {
+    font: 10px Verdana, Arial, Helvetica, sans-serif;
+    /*font-weight: bold;*/
+    /*color: #BC0C0E;*/
+}
+td.noticeTitle a:visited {
+    font: 10px Verdana, Arial, Helvetica, sans-serif;
+    /*font-weight: bold;*/
+    /*color: #BC0C0E;*/
+}
+BLOCKQUOTE {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+UL {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+LI {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+}
+/* .core WAS for use on li tags in corporate/employees which is now gone?
+LI.core{
+    margin-bottom : 10px;
+    list-style-image : url(/corporate/employees/images/question.gif);
+}*/
+DL {
+    font: 11px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+DD {
+    font: 11px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+INPUT {
+    font: 10px Verdana, Arial, Helvetica, sans-serif;
+}
+P.blue {
+    font: 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #0D2F55;
+}
+P.red {
+    font: 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #BC0C0E;
+}
+P.green {
+    font: 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #5B7278;
+}
+P.border {
+    font: 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    padding: 5px;
+    border: 1px solid;
+    border-color: #00538E;
+}
+P.noPhoto {
+    font: 14px/16px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    border-color: #00538E;
+}
+P.blueSubTitle {
+    font: bold italic 14px/16px Verdana, Arial, Helvetica, sans-serif;
+    color: #0D2F55;
+    border-bottom: 1px solid;
+}
+B {
+    font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #0E2B4E;
+}
+B I {
+    font: bold italic 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+B.red {
+    font: bold 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #BC0C0E;
+}
+B.blue {
+    font: bold 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #0D2F55;
+}
+TT B {
+    font: 9px/10px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+I.bold {
+    font: italic bold 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+I.white {
+    font: italic 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+I.revTitle {
+    font: italic 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+I.subPort {
+    font: italic 10px/12px Verdana, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+I.blue {
+    font: italic 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #0D2F55;
+}
+I.plusOne {
+    font: italic 14px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+I.plusTwo {
+    font: italic 16px/18px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+I.revised {
+    font: italic 10px/12px Verdana, Arial, Helvetica, sans-serif;
+    color: #ff0000;
+}
+SMALL {
+    font: 10px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+SMALL.red {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #BC0C0E;
+}
+SMALL.green {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #5B7278;
+}
+SMALL.blue {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #0D2F55;
+}
+SMALL.bold {
+    font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+SMALL.bi {
+    font: italic bold 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.titleLarge {
+    font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+    color: #003366;
+}
+.titleLargeindex {
+    font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+    color: #003366;
+    border-bottom: 1px solid #000000;
+}
+.hometitle {
+    font: bold 20px Verdana, Arial, Helvetica, sans-serif;
+    color: #003366;
+    border-bottom: 1px solid #000000;
+}
+.titleMed {
+    font: bold 14px/18px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+}
+.titleMedBlue {
+    font: bold 11px/15px Verdana, Arial, Helvetica, sans-serif;
+    color: #003366;
+}
+.DocMedBlue {
+    font: bold 13px Verdana, Arial, Helvetica, sans-serif;
+    color: #336699;
+}
+.titleMedInv {
+    font: bold 12px/13px Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.titleSmInv {
+    font: bold 10px/12px Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+.titleAdvisory {
+    font: bold 16px/21px Verdana, Arial, Helvetica, sans-serif;
+    color: #FF0000;
+    text-transform: uppercase;
+}
+.pwhite {
+    font: 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.titleLargeInv {
+    font: 18px/20px Verdana, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    Padding-top : 2px;
+    Padding-bottom : 2px;
+    Padding-left: 0px;
+}
+.pdark {
+    font: 12px/14px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.small {
+    font: 10px Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.white {
+    color: #ffffff;
+}
+.smallwhite {
+    font: 10px Verdana, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.BTN {
+    background-color: #E9B305;
+    border: 0px;
+    border-color: #000000;
+    font-family: verdana, arial, helvetica;
+    font-size: 7pt;
+    color: #073771;
+    padding: 2px;
+    cursor: pointer;
+}
+.subtitle {
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    color: #326699;
+    font-weight: bold;
+}
+.revTitle {
+    font: bold 12px Arial, Helvetica, Verdana, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #073771;
+}
+.revTitle a {
+    color: #ffffff;
+}
+.revTitle a:link {
+    color: #ffffff;
+}
+.revTitle a:visited {
+    color: #ffffff;
+}
+.revTitle a:hover {
+    color: #ffffff;
+}
+.sNotice a:link, .sNotice a:visited, .sNotice a:active, .sNotice a:hover {
+    color: #ffffff;
+}
+/* Required by Oracle */
+.iframe-bridge {
+    /*height: 680px;*/
+    width: 750px;
+    border: none;
+}

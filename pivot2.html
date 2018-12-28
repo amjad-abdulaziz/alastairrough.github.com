@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pivot Demo</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <!-- external libs from cdnjs -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- PivotTable.js libs from ../dist -->
+    <link rel="stylesheet" type="text/css" href="../dist/pivot.css">
+    <script type="text/javascript" src="../dist/pivot.js"></script>
+    <script type="text/javascript" src="../dist/gchart_renderers.js"></script>
+    <style>
+        body {
+            font-family: Verdana;
+        }
+    </style>
+
+    <!-- optional: mobile support with jqueryui-touch-punch -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+    <!-- for examples only! script to show code to user -->
+    <script type="text/javascript" src="show_code.js"></script>
+</head>
+
+<body>
+    <p style="font-size:11px">
+        The default view shows the average total load for all sailings in the current schedule. To refine the view, you can drag and drop the dimensions or click the dropdowns to filter the data.
+    </p>
+    <script type="text/javascript">
+        // This example adds Google Chart renderers.
+        google.load("visualization", "1", {
+            packages: ["corechart", "charteditor"]
+        });
+        $(function() {
+            var derivers = $.pivotUtilities.derivers;
+            var renderers = $.extend($.pivotUtilities.renderers,
+                $.pivotUtilities.gchart_renderers);
+            $.getJSON("output/Jan2.json", function(mps) {
+                $("#output").pivotUI(mps, {
+                    "derivedAttributes": {},
+                    "hiddenAttributes": [],
+                    "menuLimit": 500,
+                    "cols": [
+                        "sailingTime"
+                    ],
+                    "rows": [
+                        "Departing"
+                    ],
+                    "vals": [
+                        "totalLoad"
+                    ],
+                    "exclusions": {},
+                    "inclusions": {},
+                    "unusedAttrsVertical": 85,
+                    "autoSortUnusedAttrs": false,
+                    "sorters": {},
+                    "inclusionsInfo": {},
+                    "aggregatorName": "Average",
+                    "rendererName": "Bar Chart"
+                });
+            });
+        });
+    </script>
+
+    <div id="output" style="margin: 30px;"></div>
+
+</body>
+
+</html>

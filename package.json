@@ -1,0 +1,25 @@
+{
+  "name": "simple-web-scraper-javascript",
+  "version": "0.0.0",
+  "description": "A simple web scraper written in JavaScript",
+  "main": "scrape305.js",
+  "author": "Alastair Rough",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "request": "^2.79.0",
+    "node-mysql": ">=2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alastairrough/alastairrough.github.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alastairrough/alastairrough.github.com/issues"
+  },
+  "homepage": "https://github.com/alastairrough/alastairrough.github.com#readme"
+}

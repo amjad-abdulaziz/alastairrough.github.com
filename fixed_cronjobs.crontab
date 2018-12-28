@@ -1,0 +1,13 @@
+# email IP address on boot
+@reboot sudo sh /home/alastair/source/Linux-shell-scripts/address.sh | mailx -s "address on boot" rough.alastair@gmail.com
+
+# nmap
+0 6 * * * sh /home/alastair/source/nmap/nmap.sh
+
+# webmin updates
+6 23 * * * /etc/webmin/package-updates/update.pl
+
+# generate daily crontab
+55 5 * * * nodejs /home/alastair/source/alastairrough.github.com/scrape405.js | awk '!seen[$0]++' | tee /home/alastair/source/alastairrough.github.com/root.crontab && cat /home/alastair/source/alastairrough.github.com/fixed_cronjobs.crontab /home/alastair/source/alastairrough.github.com/root.crontab > /var/spool/cron/crontabs/root
+
+# daily crontab
