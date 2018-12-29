@@ -31,7 +31,7 @@ const STOP_MESSAGE = 'Goodbye!';
 //=========================================================================================================================================
 //starthere
 const data = [
- The next ferry from Horseshoe Bay will be 22:55PM. The previous ferry from Horseshoe Bay at 19:50PM had average load of 59 percent, thanks.',];
+];
 //endhere
 
 
