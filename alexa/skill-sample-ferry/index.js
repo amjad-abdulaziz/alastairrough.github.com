@@ -31,7 +31,7 @@ const STOP_MESSAGE = 'Goodbye!';
 //=========================================================================================================================================
 //starthere
 const data = [
-'On 2018-12-29 The next ferry from Langdale will be 13:05PM. The previous ferry from Langdale at 10:50AM had average load of 100 percent, thanks. The next ferry from Horseshoe Bay will be 14:10PM. The previous ferry from Horseshoe Bay at 11:55AM had above average load of 99 percent, thanks.',];
+'On 2018-12-29 The next ferry from Langdale will be 15:15PM. The previous ferry from Langdale at 13:05PM had above average load of 100 percent, thanks. The next ferry from Horseshoe Bay will be 14:10PM. The previous ferry from Horseshoe Bay at 11:55AM had above average load of 99 percent, thanks.',];
 //endhere
 
 
