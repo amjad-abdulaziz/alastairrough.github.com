@@ -1,2 +1,16 @@
-Error: Error: socket hang up
-Body empty
+30 7 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+45 9 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+55 11 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+10 14 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+20 16 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+30 17 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+50 19 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+55 22 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+20 6 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+40 8 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+50 10 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+05 13 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+15 15 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+25 17 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+40 18 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
+55 20 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh
