@@ -39,7 +39,8 @@ for (i in obj){
           hour = parseInt(hour,10);
     }
         }
-    console.log(minute, hour, "* * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh");
+//    console.log(minute, hour, "* * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh");
+    console.log(minute, hour, "* * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh");
     // 2300
     // create daily a new crontab from the next day's sailing schedule
     // then pipe to awk and crontab
